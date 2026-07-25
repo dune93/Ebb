@@ -19,4 +19,9 @@ TETCO:
     direction: receipt (into TETCO)
   - point: Ramapo interconnect
     direction: receipt (into TETCO)
+  - zone: M3 (Market Zone 3, Northeast)
+
+Acadian:
+  - point: Frisco
+    direction: unknown
 
