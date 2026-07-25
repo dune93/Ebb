@@ -42,7 +42,11 @@ pipelines:
 
   - name: Eastern Gas Transmission
     operator: Eastern Gas Transmission & Storage (BHE GT&S; formerly Dominion / DETI)
-    # TODO: postings_url not yet verified. EGTS moves Appalachian (Marcellus/Utica)
-    # supply into the Mid-Atlantic / Northeast market. Not yet run through a scout
-    # sweep — dispatch one to recover and confirm the official critical-notices URL.
-    postings_url: ""
+    # EGTS Dekaflow Informational Postings — Critical Notice Calendar lives here
+    # (high confidence; legacy dekaflow.dominionenergy.com is now dead, confirming
+    # the move to the bhegts.com domain). Bot-blocked to automated fetch.
+    postings_url: "https://dekaflow.bhegts.com/jsp/info_post.jsp?company=egts"
+    # Secondary front-end (fallback): https://infopost.bhegts.com/egts
+    # ⚠ NAME COLLISION: do NOT confuse with Energy Transfer's "EGT" (Delhi, Alto,
+    # Byars, Gulf Run, Haynesville) — a different pipeline. Genuine BHE EGTS notices
+    # use 7-digit IDs (1,0xx,xxx) and reference TL-400, PL-1, Lebanon CS, Dominion South.
