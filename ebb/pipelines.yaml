@@ -1,0 +1,33 @@
+# EBB sweep config table — one entry per pipeline.
+# Fill in each `postings_url` with the TSP's OWN critical-notices / informational
+# postings page (deep link, not the marketing landing page). The morning sweep
+# dispatches one scout per pipeline using scout-task-template.md.
+#
+# postings_url left blank => the scout must discover the page itself (less
+# reliable, more prone to landing on the wrong source). Filling these in is what
+# makes the sweep trustworthy.
+
+pipelines:
+  - name: Transco
+    operator: Williams (Transcontinental Gas Pipe Line)
+    postings_url: ""      # TODO: Williams/Transco critical notices portal
+
+  - name: TETCO
+    operator: Enbridge (Texas Eastern Transmission)
+    postings_url: ""      # TODO: Enbridge "Link" informational postings
+
+  - name: FGT
+    operator: Florida Gas Transmission (Energy Transfer)
+    postings_url: ""      # TODO: FGT EBB critical notices
+
+  - name: Acadian
+    operator: Enterprise Products (Acadian Gas Pipeline)
+    postings_url: ""      # TODO: Acadian / Enterprise informational postings
+
+  - name: SONAT
+    operator: Kinder Morgan (Southern Natural Gas)
+    postings_url: ""      # TODO: KM pipeportal Pipeline Information Postings
+
+  - name: Gulf South
+    operator: Boardwalk Pipelines (Gulf South Pipeline)
+    postings_url: ""      # TODO: Boardwalk / Gulf South infopost

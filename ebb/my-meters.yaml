@@ -1,0 +1,17 @@
+# MY_METERS / PATHS — the book to filter against.
+# The sweep's "HITS MY BOOK" section flags any notice touching an entry below.
+# Until this is filled in, the sweep runs WITHOUT the hits section (no filter
+# criteria) and the re-nom call is a generic capacity read, not book-specific.
+#
+# List your recurring meters, segments, zones, and receipt/delivery points.
+# Group by pipeline so a hit can be attributed. Example shape:
+#
+# Transco:
+#   - meter: 12345 (Station 65 pool)
+#   - path: Zone 4 -> Zone 6 (Mainline)
+#   - delivery_point: Leidy
+#
+# TETCO:
+#   - meter: ...
+
+meters: []   # TODO: paste your book here
