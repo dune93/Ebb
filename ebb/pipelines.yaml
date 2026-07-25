@@ -39,3 +39,10 @@ pipelines:
     operator: Boardwalk Pipelines (Gulf South Pipeline)
     # Boardwalk infopost EBB, Gulf South tspid=1 (Cloudflare/bot-blocked):
     postings_url: "https://infopost.bwpipelines.com/?tspid=1"
+
+  - name: Eastern Gas Transmission
+    operator: Eastern Gas Transmission & Storage (BHE GT&S; formerly Dominion / DETI)
+    # TODO: postings_url not yet verified. EGTS moves Appalachian (Marcellus/Utica)
+    # supply into the Mid-Atlantic / Northeast market. Not yet run through a scout
+    # sweep — dispatch one to recover and confirm the official critical-notices URL.
+    postings_url: ""
