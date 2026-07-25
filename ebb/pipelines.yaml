@@ -39,3 +39,12 @@ pipelines:
     operator: Boardwalk Pipelines (Gulf South Pipeline)
     # Boardwalk infopost EBB, Gulf South tspid=1 (Cloudflare/bot-blocked):
     postings_url: "https://infopost.bwpipelines.com/?tspid=1"
+
+  - name: Eastern Gas
+    operator: BHE GT&S (Eastern Gas Transmission and Storage, formerly Dominion / DTI)
+    # Dekaflow informational-postings entry point, company=egts (403 to automated
+    # fetch — host live, bot-blocked). Critical notices sit on this page behind an
+    # interactive notice calendar; the calendar's own deep link is UNVERIFIED.
+    # Alternate host seen in search, also 403: https://infopost.bhegts.com/egts
+    # Legacy dekaflow.dominionenergy.com no longer resolves (DNS) post-rebrand.
+    postings_url: "https://dekaflow.bhegts.com/jsp/info_post.jsp?company=egts"
