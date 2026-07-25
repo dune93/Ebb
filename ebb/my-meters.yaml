@@ -14,4 +14,9 @@
 # TETCO:
 #   - meter: ...
 
-meters: []   # TODO: paste your book here
+TETCO:
+  - point: Mahwah interconnect
+    direction: receipt (into TETCO)
+  - point: Ramapo interconnect
+    direction: receipt (into TETCO)
+
