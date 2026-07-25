@@ -10,24 +10,32 @@
 pipelines:
   - name: Transco
     operator: Williams (Transcontinental Gas Pipe Line)
-    postings_url: ""      # TODO: Williams/Transco critical notices portal
+    # CANDIDATE (unverified — portal 403'd automated fetch; confirm in a browser):
+    postings_url: "https://www.1line.williams.com/Transco/info-postings/notices/critical-notices.html"
 
   - name: TETCO
     operator: Enbridge (Texas Eastern Transmission)
-    postings_url: ""      # TODO: Enbridge "Link" informational postings
+    # Enbridge LINK / infopost critical-notices list (bot-blocked to automated fetch):
+    postings_url: "https://infopost.enbridge.com/infopost/NoticeListDetail.asp?strKey1=108900&type=CRI&pipe=TE"
 
   - name: FGT
     operator: Florida Gas Transmission (Energy Transfer)
-    postings_url: ""      # TODO: FGT EBB critical notices
+    # Energy Transfer InfoPost, FGT critical notices (bot-blocked to automated fetch):
+    postings_url: "https://fgttransfer.energytransfer.com/ipost/FGT/notice/critical"
 
   - name: Acadian
     operator: Enterprise Products (Acadian Gas Pipeline)
-    postings_url: ""      # TODO: Acadian / Enterprise informational postings
+    # TODO: public EBB URL never resolved. Postings sit behind the Enterprise
+    # customer portal (candidate: enterpriseproducts.com/customers/natural-gas/);
+    # unconfirmed whether public or login-walled.
+    postings_url: ""
 
   - name: SONAT
     operator: Kinder Morgan (Southern Natural Gas)
-    postings_url: ""      # TODO: KM pipeportal Pipeline Information Postings
+    # KM pipeportal / pipeline2 critical-notices index (JS/bot-blocked portal):
+    postings_url: "https://pipeline2.kindermorgan.com/Notices/Notices.aspx?type=C&code=SNG"
 
   - name: Gulf South
     operator: Boardwalk Pipelines (Gulf South Pipeline)
-    postings_url: ""      # TODO: Boardwalk / Gulf South infopost
+    # Boardwalk infopost EBB, Gulf South tspid=1 (Cloudflare/bot-blocked):
+    postings_url: "https://infopost.bwpipelines.com/?tspid=1"
